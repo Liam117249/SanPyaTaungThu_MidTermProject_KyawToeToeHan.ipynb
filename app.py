@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 import os
 
-# --- set up and data
+# set up and data
 st.set_page_config(page_title="Smart Farmer", page_icon="🌾", layout="centered")
 
 # Start Session State
