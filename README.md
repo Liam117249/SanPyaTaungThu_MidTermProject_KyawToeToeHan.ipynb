@@ -43,4 +43,4 @@ A web app that helps farmers choose the best crop to grow. It uses Machine Learn
 ## 👨‍💻 Author
 **Kyaw Toe Toe Han -**
 **Parami University**
-*Mid-Term Project for ML Web App Development*
+*/Mid-Term Project for ML Web App Development*
