@@ -13,7 +13,7 @@ A web app that helps farmers choose the best crop to grow. It uses Machine Learn
 
 ## ✨ Features
 * **🇲🇲 Bilingual:** Works in both **English** and **Myanmar (Burmese)**.
-* **🧠 High Accuracy:** Uses the **K-Nearest Neighbors (KNN)** algorithm with **96% accuracy**.
+* **🧠 High Accuracy:** Uses the **K-Nearest Neighbors (KNN)** algorithm with **97% accuracy**.
 * **🖼️ Visual Results:** Shows the predicted crop name along with a clear image.
 * **💡 Smart Tips:** Gives specific farming advice for each crop (e.g., "Needs high water" or "Drought tolerant").
 * **🧪 Soil Status:** Instantly tells if Nitrogen, Phosphorus, or pH levels are **Low**, **Optimal**, or **High**.
