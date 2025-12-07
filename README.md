@@ -33,7 +33,7 @@ A web app that helps farmers choose the best crop to grow. It uses Machine Learn
 
 ## 📂 Files in this Repo
 * **`app.py`**: The main code for the website interface.
-* **`model.pkl`**: The saved AI model (KNN + Scaler + Imputer).
+* **`model.pkl`**: The saved model (KNN + Scaler + Imputer).
 * **`crop_images/`**: Folder containing images for all crops.
 * **`requirements.txt`**: List of Python libraries needed.
 * **`TaungThu_MidTermProject.ipynb`**: The notebook used to train and test the model.
