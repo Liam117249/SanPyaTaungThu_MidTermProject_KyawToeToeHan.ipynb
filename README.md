@@ -1,50 +1,46 @@
-# 🌾 Myanmar Smart Farmer (AI Crop Recommendation System)
+# 🌾 Myanmar Smart Farmer (Crop Recommendation AI)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smartfarmermm.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
-![Accuracy](https://img.shields.io/badge/Model%20Accuracy-96%25-green)
+![Accuracy](https://img.shields.io/badge/Accuracy-97%25-green)
 
-A Machine Learning web application designed to assist Myanmar farmers in practicing **Precision Agriculture**. This tool predicts the optimal crop to cultivate based on specific soil nutrients (Nitrogen, Phosphorus, Potassium) and environmental conditions (Temperature, Humidity, Rainfall, pH).
+A web app that helps farmers choose the best crop to grow. It uses Machine Learning to analyze soil nutrients (N, P, K) and weather conditions to recommend the perfect crop for high yield.
 
-### 🔗 **Live Demo:** [Click Here to Open App](https://smartfarmermm.streamlit.app/)
-
----
-
-## 📖 Project Overview
-Agriculture is the backbone of Myanmar's economy. However, traditional farming often relies on guesswork, leading to lower yields and soil degradation. 
-
-**Smart Farmer** solves this by using the **K-Nearest Neighbors (KNN)** algorithm to analyze soil data and recommend the scientifically best crop. It bridges the gap between complex data science and rural farmers through a bilingual, user-friendly interface.
+### 🔗 **[Click Here to Open App](https://smartfarmermm.streamlit.app/)**
 
 ---
 
-## ✨ Key Features
-* **🇲🇲 Bilingual Interface:** Full support for **English** and **Myanmar (Burmese)** languages, making it accessible to local farmers.
-* **🧠 AI-Powered Prediction:** Uses a trained KNN model to classify crops with **96% accuracy**.
-* **🧪 Real-Time Soil Analysis:** Instantly visualizes if soil nutrients (N, P, K) or pH levels are **Low 🔴**, **Optimal 🟢**, or **High 🔴** as the user adjusts inputs.
-* **💡 Smart Agricultural Tips:** Provides specific cultivation advice for every predicted crop (e.g., water requirements for Rice vs. drought tolerance for Moth Beans).
-* **📥 Digital Prescription:** Allows farmers to download a `.txt` report of their soil status and recommendation to take to agriculture supply shops.
-* **🖼️ Visual Results:** Displays high-quality images of the recommended crop for easy identification.
+## ✨ Features
+* **🇲🇲 Bilingual:** Works in both **English** and **Myanmar (Burmese)**.
+* **🧠 High Accuracy:** Uses the **K-Nearest Neighbors (KNN)** algorithm with **96% accuracy**.
+* **🖼️ Visual Results:** Shows the predicted crop name along with a clear image.
+* **💡 Smart Tips:** Gives specific farming advice for each crop (e.g., "Needs high water" or "Drought tolerant").
+* **🧪 Soil Status:** Instantly tells if Nitrogen, Phosphorus, or pH levels are **Low**, **Optimal**, or **High**.
+* **📥 Download Report:** Farmers can download the recommendation as a text file.
 
 ---
 
-## 🛠️ Technical Architecture
-
-### 1. Data Pipeline (`TaungThu_MidTermProject.ipynb`)
-* **Dataset:** [Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset) (2200 samples, 22 crops).
-* **Preprocessing:** * **Data Cleaning:** Handled missing values using **`KNNImputer`** (Mastery Level) to preserve data integrity.
-    * **Feature Scaling:** Applied **`MinMaxScaler`** to normalize features (e.g., Rainfall 200mm vs pH 6.5) for distance-based calculations.
-* **Model Selection:** * Chosen Algorithm: **K-Nearest Neighbors (KNN)**.
-    * Why? KNN effectively captures the spatial similarity of soil clusters (e.g., "If neighboring soil points grow Rice, this point likely grows Rice too").
-* **Evaluation:**
-    * Achieved **96% Accuracy** on the test set.
-    * Verified using **Confusion Matrix**, **Precision**, **Recall**, and **F1-Score**.
-
-### 2. Web Interface (`app.py`)
-* Built with **Streamlit**.
-* Implements **Session State** for a seamless "Welcome Screen" to "Main App" transition.
-* Uses custom **CSS** for the "Green/Gold" agricultural theme and styling.
+## 🛠️ Technical Details
+* **Dataset:** 2200 samples of 22 different crops (Rice, Maize, Coffee, etc.).
+* **Preprocessing:**
+    * Used **KNN Imputer** to smartly fill missing values.
+    * Used **MinMaxScaler** to scale features for better accuracy.
+* **Model:** K-Nearest Neighbors (KNN) optimized with Hyperparameter Tuning.
+* **App:** Built with **Streamlit** using custom CSS for a green agriculture theme.
 
 ---
 
-## 📂 Repository Structure
+## 📂 Files in this Repo
+* **`app.py`**: The main code for the website interface.
+* **`model.pkl`**: The saved AI model (KNN + Scaler + Imputer).
+* **`crop_images/`**: Folder containing images for all crops.
+* **`requirements.txt`**: List of Python libraries needed.
+* **`TaungThu_MidTermProject.ipynb`**: The notebook used to train and test the model.
+
+---
+
+## 👨‍💻 Author
+**Kyaw Toe Toe Han**
+**Parami University**
+*Mid-Term Project for ML Web App Development*
