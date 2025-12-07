@@ -1,4 +1,4 @@
-# 🌾 Myanmar Smart Farmer (Crop Recommendation AI)
+# 🌾 Myanmar Smart Farmer (Crop Recommendation System)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smartfarmermm.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
