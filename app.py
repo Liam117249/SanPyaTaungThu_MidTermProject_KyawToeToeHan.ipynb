@@ -5,7 +5,7 @@ import pickle
 import os
 
 # set up and data
-st.set_page_config(page_title="Smart Farmer", page_icon="🌾", layout="centered")
+st.set_page_config(page_title="Smart Farmer", page_icon="🌾", layout="wide")
 
 # Start Session State
 if 'page' not in st.session_state:
